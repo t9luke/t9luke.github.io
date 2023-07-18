@@ -1,9 +1,12 @@
 function logDeviceOrientationInfo(event) {
-  console.log('Device Orientation Info:');
-  console.log(' - Alpha: ' + event.alpha);
-  console.log(' - Beta: ' + event.beta);
-  console.log(' - Gamma: ' + event.gamma);
-  console.log(' - Absolute: ' + event.absolute);
+  const orientationInfoElement = document.getElementById('orientationInfo');
+  orientationInfoElement.innerHTML = `
+    <strong>Device Orientation Info:</strong><br>
+    - Alpha: ${event.alpha}<br>
+    - Beta: ${event.beta}<br>
+    - Gamma: ${event.gamma}<br>
+    - Absolute: ${event.absolute}
+  `;
 }
 
 function requestAccess() {
