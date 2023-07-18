@@ -23,4 +23,7 @@ function requestAccess() {
   }
 }
 
-requestAccess();
+const requestButton = document.getElementById('requestButton');
+requestButton.addEventListener('click', () => {
+  requestAccess();
+});
