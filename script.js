@@ -24,6 +24,6 @@ function requestAccess() {
 }
 
 const requestButton = document.getElementById('requestButton');
-requestButton.addEventListener('click', () => {
+requestButton.addEventListener('touchstart', () => {
   requestAccess();
 });
